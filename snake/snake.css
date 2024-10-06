@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background:url("snakebg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    text-align: center;
+    text-shadow: coral;
+    font-stretch: expanded;
+}
+.body
+{
+    width:100vw;
+    height:95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board
+{
+    background:linear-gradient(rgb(159, 195, 230),rgba(87, 8, 57, 0.795));
+    height:90vmin;
+    width:100vmin;
+    border:3px solid rgb(27, 27, 27);
+    display: grid;
+    grid-template-columns:repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+    
+}
+.snake
+{
+    background-color:rgba(255, 60, 0, 0.842);
+    border: .25vmin solid black;
+    border-radius:12px;
+}
+.head
+{
+    background-color:rgba(230, 45, 32, 0.966);
+    border:0.2px solid rgb(22, 21, 21);
+    transform: scale(1.2); 
+    border-radius:7px;
+}
+.food
+{
+    background:linear-gradient(yellow,rgb(184, 93, 41));
+    border-radius:20px;
+    border:1px solid rgb(80, 79, 79);
+ 
+
+
+}
+#highscore
+{
+    position: absolute;
+    top:20vh;
+    right:170px;
+    font-size:25px;
+    font-weight:bolder;
+}
+#scorebord
+{
+    position: absolute;
+    top:25vh;
+    right:200px;
+    font-size:25px;
+    font-weight:bolder;
+}
+
+#reload
+{
+    padding:6px;
+    font-size:18px;
+    border-radius:20%;
+    background-color:rgb(236, 231, 231);
+    color: rgb(24, 23, 23);
+    font-weight: bold;
+    position: relative;
+    left: 8vw;
+    bottom:6vw;
+}
