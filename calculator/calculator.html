@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+    <script lang="javascript">
+
+        function f1(allid)
+        {
+            let v1=document.getElementById(allid);
+            let v2=document.querySelector("input");
+            v2.value=v2.value+v1.innerHTML;
+        }
+        function f2()
+        {
+            let v1=document.querySelector("input");
+            v1.value = eval(v1.value.replace('^', '**'));
+        }
+        function clearall()
+        {
+            document.querySelector("input").value="";
+        }
+        function power()
+        {
+            let v1 = document.querySelector("input");
+            v1.value += "^";
+        }
+        function clearone()
+        {
+            let v1 = document.querySelector("input");
+            v1.value = v1.value.slice(0, -1);
+        }
+    </script>
+</head>
+<body>
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <div class="enter">
+                <input id="input1" type="digit">
+            </div>
+            <div class="buttons">
+                <button onclick="clearall()">Ac</button>
+                <button id="delone" onclick="clearone()">X</button>
+                <button id="mod" onclick="f1('mod')">%</button>
+                <button id="multi" onclick="f1('multi')">*</button>
+                <button id="one" onclick="f1('one')">1</button>
+                <button id="two" onclick="f1('two')">2</button>
+                <button id="three" onclick="f1('three')">3</button>
+                <button id="plus" onclick="f1('plus')">+</button>
+                <button id="four" onclick="f1('four')">4</button>
+                <button id="five" onclick="f1('five')">5</button>
+                <button id="six" onclick="f1('six')">6</button>
+                <button id="minus" onclick="f1('minus')">-</button>
+                <button id="seven" onclick="f1('seven')">7</button>
+                <button id="eight" onclick="f1('eight')">8</button>
+                <button id="nine" onclick="f1('nine')">9</button>
+                <button id="divide" onclick="f1('divide')">/</button>
+                <button id="zero" onclick="f1('zero')">0</button>
+                <button id="dot" onclick="f1('dot')">.</button>
+                <button id="pow" onclick="power()">^</button>
+                <button id="equal" onclick="f2('equal')">=</button>
+            </div>
+        </div>
+       
+</body>
+</html>
