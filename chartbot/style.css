@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    height: 90vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chat {
+    flex-grow: 1;
+    max-height: 70%;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user .text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.bot .text {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bottom-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.option-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.option-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* const defaultOptions = [
+    { 
+        text: "Crop Health", 
+        response: "To improve crop health, make sure to check soil nutrients and use organic fertilizers. Rotate crops to reduce pests and diseases." 
+    },
+    { 
+        text: "Government Schemes", 
+        response: "Some popular government schemes for farmers include PM-KISAN for financial support and KCC for low-interest loans. Check with your local agriculture office for more details." 
+    },
+    { 
+        text: "Weather Forecast", 
+        response: "You can check the IMD website or download a weather app to track weather conditions and make informed decisions about irrigation and sowing." 
+    },
+    { 
+        text: "Market Prices", 
+        response: "Keep track of local mandi prices through apps like eNAM or consult your local market. Staying updated helps you get better prices for your produce." 
+    },
+
+{
+text: "Crop Health",
+response:
+"To improve crop health, make sure to check soil nutrients and use organic fertilizers. Rotate crops to reduce pests and diseases.",
+},
+{
+text: "Government Schemes",
+response:
+"Some popular government schemes for farmers include PM-KISAN for financial support and KCC for low-interest loans. Check with your local agriculture office for more details.",
+},
+{
+text: "Weather Forecast",
+response:
+"You can check the IMD website or download a weather app to track weather conditions and make informed decisions about irrigation and sowing.",
+},
+{
+text: "Market Prices",
+response:
+"Keep track of local mandi prices through apps like eNAM or consult your local market. Staying updated helps you get better prices for your produce.",
+},
+{
+text: "Pest and Disease Management",
+response:
+" Use integrated pest management (IPM) techniques, including crop rotation, biological control, and resistant crop varieties to reduce reliance on chemical pesticides.",
+},
+{
+text: "Water Scarcit",
+response:
+"Implement drip irrigation systems and rainwater harvesting to optimize water use and ensure crops receive adequate moisture.",
+},
+{
+text: "Soil Fertility",
+response:
+"Regularly test soil and use organic fertilizers like compost and manure to maintain soil health and fertility.",
+},
+{
+text: "Climate Change",
+response:
+"Adopt climate-smart agricultural practices such as conservation tillage, agroforestry, and crop diversification to build resilience against climate impacts.",
+},
+{
+text: "Access to Credit",
+response:
+" Explore microfinance options and government schemes designed to provide financial support to small and marginal farmers.",
+},
+{
+text: " Post-Harvest Losses",
+response:
+"Invest in proper storage facilities and cold chain logistics to minimize losses and maintain the quality of produce.",
+},
+]; */
