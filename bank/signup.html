@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <style>
+        * 
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+       
+        nav 
+        {
+            height: 100px;
+            /* background-color: #9ba1a18a; */
+            background-color: #285480e7;
+            width: 100%;
+        }
+        nav ul 
+        {
+            line-height: 100px;
+            display: flex;
+            justify-content: end;
+            list-style-type: none;
+        }
+        nav ul a 
+        {
+            color: black;
+            text-decoration: none;
+            margin-right: 50px;
+            text-align: center;
+            font-size: 22px;
+        }
+        nav ul a:hover 
+        {
+            text-decoration: underline;
+            
+        }
+        nav li i 
+        {
+            color: white;
+            margin-right: 5px;
+            font-size: 22px;
+        }
+        nav li:first-child 
+        {
+            margin-right: auto;
+            color: black;
+        }
+        .bankname 
+        {
+            font-size: 45px;
+            margin-left: 12px;
+            line-height: 100px;
+        }
+        #one 
+        {
+            display: none;
+        }
+        
+
+
+
+        
+        /* fotter styling */
+        .footer 
+        {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer .links, .footer .social, .footer .contactimg 
+        {
+            margin-bottom: 20px;
+        }
+        .footer .links a, .footer .contactimg a 
+        {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer .links a:hover, .footer .contactimg a:hover 
+        {
+            text-decoration: underline;
+        }
+        .footer .social a 
+        {
+            color: white;
+            margin: 0 10px;
+        }
+        .footer .social a:hover 
+        {
+            color: #3498db;
+        }
+        .footer .legal 
+        {
+            font-size: 14px;
+        }
+        .legal p a
+        {
+            color:white;
+            text-decoration: none;
+        }
+        .form
+        {
+            margin-left: 33%;
+            display: inline-block;
+        }
+        .form td 
+        {
+            width:8vw;
+            height:10vh;
+            font-size:20px;
+        }
+        .form input
+        {
+            height:5vh;
+            width:15vw;
+        }
+        .form input[type="submit"],input[type="reset"]
+        {
+            margin:20px;
+        }
+
+
+
+       
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script lang="javascript">
+        function f1() 
+        {
+            let v1 = document.querySelector(".sidebar");
+            v1.style.display = "flex";
+        }
+        function f2() 
+        {
+            let v1 = document.querySelector(".sidebar");
+            v1.style.display = "black";
+        }
+        //for login page visible
+          
+        function check()
+        {
+    
+                var p1=document.form1.pass.value;
+                var p2=document.form1.cpass.value;
+               if(p1!=p2)
+                    alert("password and conform password not matched");
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="bankname">MK Bank</li>
+            <li class="hide"><a href="#home">Home</a></li>
+            <li class="hide"><a href="#contact">Contact us</a></li>
+            <li class="hide"><a href="#loansall">Loans</a></li>
+            <li class="hide"><a href="#updates">Updates</a></li>
+            <li class="hide"><a href="#" id="loginvisible" onclick="loginshow()">Login</a></li>
+            <li id="one" onclick="f1()"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+
+      
+    </nav>
+    <hr>
+    <div class="form">
+    <h2>Create your Account Here</h2>
+    <form name="form1" method="post" action="signup.jsp">
+        <table >
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" placeholder="Enter name:"></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type="digit" placeholder="Enter digit:"></td>
+            </tr>
+            <tr>
+                <td>Create password</td>
+                <td><input type="password" name="pass" placeholder="Create a strong password:"></td>
+            </tr>
+            <tr>
+                <td>Confirm password</td>
+                <td><input type="password" name="cpass" placeholder="Create a strong password:" onchange="check()"></td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><input type="text" name="img" placeholder="Enter image path:"></td>
+            </tr>
+        </table>
+        <input type="Submit" value="create">
+        <input type="reset" value="reset">
+    </form>
+    </div>
+    
+    <footer class="footer">
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Loans</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="contactimg">
+            <p><strong>Contact Us:</strong> 800-123-456789 || <a href="mailto:mkbank@gmail.com">mkbank@gmail.com</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/mkbank" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/mkbank" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/mkbank" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/mkbank" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="legal">
+            <p>&copy; 2024 MK Bank. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
