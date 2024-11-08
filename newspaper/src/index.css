@@ -1,0 +1,25 @@
+a
+{
+    text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    height: 290px;
+  }
+  .text-bg-secondary {
+    color: #fff !important;
+    background-color: RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1)) !important;
+    width: 70px;
+  }
+  .bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-danger-rgb),var(--bs-bg-opacity)) !important;
+    left: 101px;
+    margin-left: -62px;
+    margin-top: 12px;
+    width: 126px;
+  }
